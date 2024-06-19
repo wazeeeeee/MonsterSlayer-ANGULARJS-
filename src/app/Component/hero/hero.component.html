@@ -1,0 +1,16 @@
+<div class="container">
+    <h1>Hero</h1>
+    <div class="health-bar">
+        <div class="health-bar-fill"
+             [style.width.%]=" playerService.playerHealthPercent " style="text-align: center; color: white;">
+            <p class="healthpoint">{{ playerService.playerCurrentHealth }} /
+                {{ playerService.playerMaxHealth }}</p>
+        </div>
+    </div>
+    <div class="btn">
+        <button (click)="attack()">Attack</button>
+        <button (click)="attackSpecial()" style="background-color: red;">Special Attack</button>
+        <button (click)="heal()" style="background-color: green;">Heal</button>
+        <button (click)="giveUp()" style="background-color: black;">Give Up</button>
+    </div>
+</div>
