@@ -1,0 +1,9 @@
+<h1>Monster</h1>
+<div class="health-bar">
+    <div class="health-bar-fill"
+         [style.width.%]=" playerService.monsterHealthPercent " style="text-align: center; color: white;">
+        <p class="healthpoint">{{ playerService.monsterCurrentHealth }} /
+            {{ playerService.monsterMaxHealth }}</p>
+    </div>
+</div>
+
